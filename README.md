@@ -1,0 +1,1 @@
+﻿# .NET Core API integration for Minio Client

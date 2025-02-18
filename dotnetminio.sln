@@ -1,8 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B913A3D3-64E3-4B0A-BAEF-E03BD41C2A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minio.API", "src\Minio.API\Minio.API.csproj", "{0F6879D8-D3E4-46FE-9D53-2E3439921EC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Minio.Docker", "Minio.Docker", "{D1655F94-B918-450C-98A7-75B8DF2FA01A}"
+	ProjectSection(SolutionItems) = preProject
+		src\Minio.Docker\docker-compose.yml = src\Minio.Docker\docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F6879D8-D3E4-46FE-9D53-2E3439921EC1} = {B913A3D3-64E3-4B0A-BAEF-E03BD41C2A5B}
+		{D1655F94-B918-450C-98A7-75B8DF2FA01A} = {B913A3D3-64E3-4B0A-BAEF-E03BD41C2A5B}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F6879D8-D3E4-46FE-9D53-2E3439921EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6879D8-D3E4-46FE-9D53-2E3439921EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6879D8-D3E4-46FE-9D53-2E3439921EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6879D8-D3E4-46FE-9D53-2E3439921EC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
